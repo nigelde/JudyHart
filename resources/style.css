@@ -78,8 +78,8 @@ html, body {
 }
 
 .bio-img-box {
-    width: 15rem;
-    height: 20rem;
+    min-width: 15rem;
+    min-height: 20rem;
     margin-bottom: 1rem;
 }
 
@@ -188,6 +188,10 @@ html, body {
     width: 50%;
 }
 
+#contact {
+    margin-bottom: 5rem;
+}
+
 .icon {
     color: #23395D;
 }
@@ -199,7 +203,7 @@ html, body {
 footer {
     display: flex;
     align-items: center;
-    height: 5rem;
+    height: 3rem;
     width: 100%;
     background-color: #FFA500;
     position: fixed;
@@ -215,6 +219,10 @@ footer p {
 
     * {
         font-size: 16px;
+    }
+
+    .nav-item {
+        padding: 2%;
     }
 
     .bio-text-box {
@@ -272,9 +280,13 @@ footer p {
     }
 
     .bio-img-box {
-        margin-bottom: 1rem;
         width: 15rem;
-        height: auto;
+        height: 20rem;
+    }
+
+    .bio-img {
+        width: 100%;
+        height: 100%;
     }
 
     .bio-text-box {
@@ -301,7 +313,7 @@ footer p {
     .contact-heading-mob {
         display: block;
         font-size: 1.2rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
         color: #23395D;
         padding-top: 7rem;
     }
