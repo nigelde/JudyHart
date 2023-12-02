@@ -1,6 +1,6 @@
 $(document).ready(() => {
     $(".title").hide();
-        $(".title").fadeIn(1500);
+        $(".title").fadeIn(2000);
 
     $(".bio-img").hide();
         $(".bio-img").fadeIn(1500);
