@@ -22,6 +22,17 @@ html, body {
     top: 0px;
 }
 
+button {
+    background-color: #FFA500;
+    color: #23395D;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1;
+}
+
 .nav-items {
     display: flex;
     height: 5rem;
@@ -81,11 +92,13 @@ html, body {
     min-width: 15rem;
     min-height: 20rem;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .bio-img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .bio-text-box {
@@ -139,10 +152,16 @@ html, body {
     background-color: #ffeddd;
 }
 
+.painting-box-active {
+    transform: scale(1.5);
+    transition: transform 1s linear;
+}
+
 .painting {
     width: 100%;
     height: 100%;
     padding: 4%;
+    cursor: pointer;
 }
 
 .coming-soon {
