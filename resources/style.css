@@ -71,6 +71,7 @@ button {
 }
 
 .title {
+    visibility: hidden;
     display: flex;
     align-items: center;
     color: aliceblue;
