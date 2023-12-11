@@ -6,8 +6,9 @@ $(document).ready(() => {
         $(".bio-img").fadeIn(1500);
 
     $(".painting-box").on("click", (event) => {
-        $(event.currentTarget).addClass("painting-box-active");
-    }).on("mouseleave", (event) => {
-        $(event.currentTarget).removeClass("painting-box-active");
-    });
-});
+        $(event.currentTarget).toggleClass("painting-box-active");
+        $(".click").toggle();
+        $(".click-active").toggle();
+    })
+    
+})

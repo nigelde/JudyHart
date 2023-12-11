@@ -154,8 +154,10 @@ button {
 }
 
 .painting-box-active {
-    transform: scale(1.5);
+    transform: scale(1.75);
     transition: transform 1s linear;
+    z-index: 1;
+    position: fixed;
 }
 
 .painting {
@@ -163,6 +165,19 @@ button {
     height: 100%;
     padding: 4%;
     cursor: pointer;
+}
+
+.click {
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+}
+
+.click-active {
+    display: none;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
 }
 
 .coming-soon {
