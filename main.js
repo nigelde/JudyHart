@@ -7,8 +7,11 @@ $(document).ready(() => {
 
     $(".painting-box").on("click", (event) => {
         $(event.currentTarget).toggleClass("painting-box-active");
-        $(".click").toggle();
-        $(".click-active").toggle();
+    });
+
+    $(".enlarge").on("click", function() {
+        $(this).html() == "Exit" ? $(this).html('Enlarge') : $(this).html('Exit');
     })
+    
     
 })

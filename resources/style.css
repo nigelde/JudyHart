@@ -149,6 +149,7 @@ button {
     width: 20rem;
     height: 20rem;
     margin: 2%;
+    text-align: center;
     border: 5px solid #23395D;
     background-color: #ffeddd;
 }
@@ -160,24 +161,26 @@ button {
     position: fixed;
 }
 
+.enlarge {
+    display: inline-block;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+    background-color: #FFA500;
+    color: #23395D;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.enlarge:active {
+    box-shadow: none;
+}
+
 .painting {
     width: 100%;
-    height: 100%;
+    height: 85%;
     padding: 4%;
-    cursor: pointer;
-}
-
-.click {
-    font-size: 12px;
-    margin: auto;
-    text-align: center;
-}
-
-.click-active {
-    display: none;
-    font-size: 12px;
-    margin: auto;
-    text-align: center;
 }
 
 .coming-soon {
