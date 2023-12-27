@@ -9,9 +9,10 @@ $(document).ready(() => {
         $(event.currentTarget).toggleClass("painting-box-active");
     });
 
+    
     $(".enlarge").on("click", function() {
         $(this).html() == "Exit" ? $(this).html('Enlarge') : $(this).html('Exit');
-    })
+    });
     
     
 })

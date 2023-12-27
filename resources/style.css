@@ -97,6 +97,7 @@ button {
 }
 
 .bio-img {
+    display: none;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -253,7 +254,17 @@ footer p {
     font-size: 0.75rem;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 480px) {
+.development {
+    position: absolute;
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.development a {
+    font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
 
     * {
         font-size: 16px;
@@ -270,6 +281,22 @@ footer p {
 
     .signature-container {
         min-width: 90vw;
+    }
+
+    .painting {
+        height: 100%;
+    }
+
+    .enlarge {
+        display: none;
+    }
+
+    .development {
+        margin-right: 1rem;
+    }
+
+    .develoment a {
+        font-size: 0.4rem;
     }
 }
 
