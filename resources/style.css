@@ -205,10 +205,11 @@ h6 {
 }
 
 .painting-box-active {
-    transform: scale(1.50);
+    transform: scale(1.75);
     transition: transform 1s linear;
     z-index: 1;
     position: fixed;
+    bottom: 15%;
 }
 
 .painting {
@@ -221,6 +222,7 @@ h6 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 9px;
+    background-color: #ffeddd;
 }
 
 .coming-soon {
@@ -357,7 +359,7 @@ footer p {
         height: 100%;
     }
 
-    .enlarge {
+    .painting-box-active {
         display: none;
     }
 
