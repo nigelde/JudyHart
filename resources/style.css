@@ -156,6 +156,10 @@ button {
     color: #23395D;
 }
 
+.call-mob {
+    display: none;
+}
+
 .paintings-container {
     max-width: 100%;
     display: flex;
@@ -355,12 +359,24 @@ footer p {
         min-width: 90vw;
     }
 
+    .call {
+        display: none;
+    }
+
+    .call-mob {
+        display: block;
+        padding: 2rem;
+        color: #23395D;
+    }
+
     .painting {
         height: 100%;
     }
 
     .painting-box-active {
-        display: none;
+        transform: scale(1);
+        transition: none;
+        position: static;
     }
 
     .development {
