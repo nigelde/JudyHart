@@ -136,6 +136,20 @@ button {
     float: right;
 }
 
+.events-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 2px solid #23395D;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.events-heading, events {
+    color: #23395D;
+    padding-bottom: 1rem;
+}
+
 .artwork-heading {
     display: block;
 }
