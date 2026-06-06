@@ -174,18 +174,6 @@ button {
     display: none;
 }
 
-.artists-at-home {
-    display: inline-block;
-    width: 100%;
-    color: #23395D;
-    animation: marquee 17s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%);}
-    100% {transform: translateX(-100%);}
-}
-
 .paintings-container {
     max-width: 100%;
     display: flex;
@@ -306,6 +294,7 @@ h6 {
 .contact-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-top: 5rem;
     justify-content: center;
     align-items: center;
@@ -411,6 +400,14 @@ footer p {
 
     .develoment a {
         font-size: 0.4rem;
+    }
+
+    .artists-at-home-mob {
+        visibility: visible;
+    }
+
+    .artists-at-home {
+        visibility: hidden;
     }
 }
 
@@ -524,6 +521,14 @@ footer p {
     footer p {
         font-size: 0.6rem;
     }
+
+    .artists-at-home-mob {
+        visibility: visible;
+    }
+
+    .artists-at-home {
+        visibility: hidden;
+    }
     
 }
 
@@ -546,5 +551,13 @@ footer p {
 
     .pieces {
         display: none;
+    }
+
+    .artists-at-home-mob {
+        visibility: visible;
+    }
+
+    .artists-at-home {
+        visibility: hidden;
     }
 }
