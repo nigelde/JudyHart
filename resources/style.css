@@ -21,6 +21,7 @@ html, body {
     background-color: #FFA500;
     position: fixed;
     top: 0px;
+    z-index: 1;
 }
 
 button {
@@ -174,6 +175,42 @@ button {
     display: none;
 }
 
+.ticker-container {
+    overflow: hidden;
+    width: 100%;
+    height: 2.5rem;
+    box-sizing: content-box;
+    background-color: #23395D;
+    margin-top: 3rem;
+    z-index: 0;
+}
+
+.ticker {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    box-sizing: content-box;
+    animation: ticker 25s linear infinite;
+}
+
+.ticker-title {
+    color: #FFA500;
+    z-index: 0;
+}
+
+.ticker-title-mob {
+    color: #FFA500;
+    z-index: 0;
+    visibility: hidden;
+}
+
+@keyframes ticker {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
 .paintings-container {
     max-width: 100%;
     display: flex;
@@ -258,6 +295,14 @@ h6 {
     display: none;
 }
 
+.big-contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+}
+
 .contact-jumbotron {
     height: 15rem;
     width: 100%;
@@ -267,7 +312,6 @@ h6 {
     background-size: cover;
     margin-top: 10rem;
     text-align: center;
-
 }
 
 .contact-heading {
@@ -505,10 +549,6 @@ footer p {
         padding-top: 7rem;
     }
 
-    .contact-container {
-        align-items: flex-start;
-    }
-
     .contact {
         width: 100%;
         margin-left: 2rem;
@@ -552,12 +592,25 @@ footer p {
     .pieces {
         display: none;
     }
+}
 
-    .artists-at-home-mob {
+@media only screen and (max-width: 400px) {
+    .ticker-title-mob {
         visibility: visible;
+        position: relative;
+        bottom: 1.3rem;
     }
 
-    .artists-at-home {
+    .ticker-title {
         visibility: hidden;
     }
+
+    .ticker {
+        padding-bottom: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.1rem;
+    } 
 }
+
